@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(black, rgb(18, 18, 129), black);
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(19, 18, 129, 0.6), rgb(0, 0, 0, 0.6)), url('virtual1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
@@ -26,7 +26,8 @@ h1 {
     width: 50%;
     margin: auto;
     margin-top: 15px;
-    background-image: linear-gradient(to right, black, blue);
+    /* background-image: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(18, 18, 129, 0.5)), url('v;irtual1.jpg'); */
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(18, 18, 129, 0.5));
 }
 .login h2 {
     font-weight: bolder;
