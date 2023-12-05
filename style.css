@@ -76,6 +76,99 @@ form input::placeholder {
     padding: 10px 0;
 }
 
+/* HEADER SECTION */
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: gainsboro;
+}
+header nav ul li a:hover {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+.hero .heroimg {
+    /* width: 40%; */
+}
+.hero .heroimg img {
+    width: 550px;
+    height: 400px;
+}
+.hero .herotitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    background-color: transparent;
+}
+.hero .herotitle h1 {
+    background-image: linear-gradient(to right, blue, rgb(255, 2, 44));
+    font-size: 70px;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+}
+.hero .herotitle em {
+    text-align: center;
+    margin-top: -30px;
+}
+.hero .herotitle button {
+    background-image: linear-gradient(to right, blue, rgb(255, 2, 44));
+    border: none;
+    color: gainsboro;
+    padding: 15px;
+    border-radius: 7px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.hero .herotitle button:hover {
+    border: 1px solid red;
+    background-color: orange;
+    color: red;
+}
+
+
+
+
+
+
+
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 900px) {
