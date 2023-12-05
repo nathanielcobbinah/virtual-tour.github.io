@@ -7,7 +7,7 @@ body {
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
-    color: gray;
+    color: gainsboro;
     font-family: sans-serif;
 }
 h1 {
@@ -15,4 +15,61 @@ h1 {
     padding: 10px;
     font-weight: bolder;
     font-size: 50px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border: 1px solid blue;
+    padding: 25px;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    background-image: linear-gradient(to right, black, blue);
+}
+.login h2 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input {
+    padding: 15px;
+    border-radius: 7px;
+    outline: none;
+    margin-top: 7px 0;
+
+}
+form input:focus {
+    border: 3px solid blue;
+}
+form button {
+    padding: 20px;
+    background-image: linear-gradient(to right, blue, black);
+    border: none;
+    border: 1px blue;
+    color: gainsboro;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+input button:hover {
+    background-image: linear-gradient(to right, black, blue);
+}
+form input::placeholder {
+    font-style: italic;
+}
+.login .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.login .remember {
+    padding: 10px 0;
 }
