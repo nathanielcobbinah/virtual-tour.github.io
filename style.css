@@ -59,8 +59,9 @@ form button {
     border-radius: 7px;
     margin-bottom: 10px;
 }
-input button:hover {
+form button:hover {
     background-image: linear-gradient(to right, black, blue);
+    border: 1px solid blue;
 }
 form input::placeholder {
     font-style: italic;
