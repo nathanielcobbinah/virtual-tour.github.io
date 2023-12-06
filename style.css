@@ -99,13 +99,20 @@ header .logo img {
 header nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
 }
 header nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
+}
+header nav span {
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+    display: none;
 }
 header nav ul li {
     list-style: none;
@@ -190,6 +197,28 @@ header nav ul li a:hover {
     .login {
         width: 80%;
         margin-top: 50px;
+    }
+    header {
+        align-items: flex-start;
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav span {
+        display: block;
+        /* margin-right: 0; */
+    }
+    header nav ul {
+        flex-direction: column;
+        margin-right: 0;
+        align-items: start;
+        z-index: 2;
+
+    }
+    header nav ul li {
+        margin-bottom: 3px;
+        margin-right: 0;
     }
 }
 
