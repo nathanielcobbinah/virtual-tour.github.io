@@ -1,34 +1,35 @@
 body {
-    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(19, 18, 129, 0.6), rgb(0, 0, 0, 0.6)), url('virtual1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(19, 18, 129, 0.6), rgba(0, 0, 0, 0.6)), url('virtual1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 100%;
-    height: 100vh;
+    width: 100%;
+    height: 100%;   
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
     color: gainsboro;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 h1 {
     text-align: center;
     padding: 10px;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .login {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     border: 1px solid blue;
     padding: 25px;
-    width: 50%;
+    height: auto;
+    /* height: 100%; */
     margin: auto;
-    margin-top: 15px;
-    /* background-image: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(18, 18, 129, 0.5)), url('v;irtual1.jpg'); */
-    background-image: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(18, 18, 129, 0.5));
+    /* margin-top: 60px; */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(18, 18, 129, 0.5));
 }
+
 .login h2 {
     font-weight: bolder;
     text-align: center;
@@ -39,50 +40,65 @@ form {
     display: flex;
     flex-direction: column;
 }
+
 form input {
     padding: 15px;
     border-radius: 7px;
     outline: none;
     margin-top: 7px 0;
-
 }
+
 form input:focus {
     border: 3px solid blue;
 }
+
 form button {
     padding: 20px;
     background-image: linear-gradient(to right, blue, black);
     border: none;
-    border: 1px blue;
     color: gainsboro;
     text-transform: uppercase;
     font-weight: bolder;
     border-radius: 7px;
     margin-bottom: 10px;
+    transition: background-color 0.3s ease;
 }
+
 form button:hover {
     background-image: linear-gradient(to right, black, blue);
     border: 1px solid blue;
 }
+
 form input::placeholder {
     font-style: italic;
 }
+
 .login .wrapper {
     display: flex;
     flex-direction: column;
     padding: 10px 0;
 }
+.wrapper label {
+    font-weight: bold;
+    display: block;
+}
+
+.wrapper input[type="radio"] {
+    margin-right: 5px;
+}
+
 .login .remember {
     padding: 10px 0;
 }
 
 /* HEADER SECTION */
 header {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 header .logo {
     display: flex;
     flex-direction: row;
@@ -91,22 +107,25 @@ header .logo {
     font-weight: bolder;
     color: rgb(19, 19, 172);
 }
+
 header .logo img {
     width: 40px;
     height: 40px;
     border-radius: 7px;
 }
+
 header nav {
     display: flex;
     flex-direction: row;
-    /* align-items: start; */
 }
+
 header nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
 }
+
 #menu {
     background-color: blue;
     padding: 5px;
@@ -114,6 +133,7 @@ header nav ul {
     font-weight: bolder;
     display: none;
 }
+
 header nav ul li {
     list-style: none;
 }
@@ -122,27 +142,28 @@ header nav ul li a {
     text-decoration: none;
     color: gainsboro;
 }
+
 header nav ul li a:hover {
     color: blue;
     border-bottom: 1px solid blue;
 }
 
 /* HERO SECTION */
-
 .hero {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
+    /* margin-top: 80px; */
+    height: 100vh;
+    margin-top: -10px;
 }
-.hero .heroimg {
-    /* width: 40%; */
-}
+
 .hero .heroimg img {
     width: 550px;
     height: 400px;
 }
+
 .hero .herotitle {
     display: flex;
     flex-direction: column;
@@ -151,6 +172,7 @@ header nav ul li a:hover {
     width: 90%;
     background-color: transparent;
 }
+
 .hero .herotitle h1 {
     background-image: linear-gradient(to right, blue, rgb(255, 2, 44));
     font-size: 70px;
@@ -159,10 +181,12 @@ header nav ul li a:hover {
     background-clip: text;
     -moz-background-clip: text;
 }
+
 .hero .herotitle em {
     text-align: center;
     margin-top: -30px;
 }
+
 .hero .herotitle button {
     background-image: linear-gradient(to right, blue, rgb(255, 2, 44));
     border: none;
@@ -171,32 +195,53 @@ header nav ul li a:hover {
     border-radius: 7px;
     margin-top: 10px;
     font-weight: bolder;
+    transition: background-color 0.3s ease;
 }
+
 .hero .herotitle button:hover {
     border: 1px solid red;
     background-color: orange;
     color: red;
 }
 
+.profile button {
+    padding: 10px;
+    background-color: blue;
+    border: none;
+}
+.profile a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 
-
-
-
+.logout button {
+    padding: 10px;
+    background-color: red;
+    margin-top: 10px;
+}
+.logout a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 
 
 /* MEDIA QUERY */
-
 @media only screen and (max-width: 900px) {
     .login {
         width: 70%;
-        margin-top: 30px;
+        /* margin-top: 30px; */
+    }
+    .hero {
+        margin-top: -20px;
     }
 }
 
 @media only screen and (max-width: 648px) {
     .login {
         width: 80%;
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
     header {
         align-items: flex-start;
@@ -208,12 +253,9 @@ header nav ul li a:hover {
     #menu {
         display: block;
         margin-right: 0;
-        /* display: absolute; */
-        right: 0;
-        top: 0;
     }
     header nav ul {
-        flex-direction: column; 
+        flex-direction: column;
         margin-right: 0; 
         align-items: start; 
         display: none; 
@@ -222,13 +264,28 @@ header nav ul li a:hover {
         margin-bottom: 3px;
         margin-right: 0;
     }
+    body {
+        height: 100vh;
+    }
+    .hero {
+        margin-top: -15px;
+    }
+    .hero .herotitle h1 {
+        font-size: 50px;
+    }
+    .hero .herotitle em {
+        font-size: 14px;
+    }
+    .hero .herotitle button {
+        padding: 12px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
     .login {
         width: 90%;
         padding: 15px;
-        margin-top: 10px
+        /* margin-top: 100px; */
     }
     form input {
         padding: 10px;
@@ -240,7 +297,23 @@ header nav ul li a:hover {
     .login h2 {
         font-size: 20px;
     }
+    .hero {
+        margin-top: -70px;
+    }
+    .hero .herotitle h1 {
+        font-size: 50px;
+    }
+    .hero .herotitle em {
+        font-size: 10px;
+    }
+    .hero .herotitle button {
+        padding: 8px;
+    }
+    .hero .herotitle {
+        gap: 10px;
+    }
 }
+
 @media only screen and (max-width: 350px) {
     .login {
         padding: 5px;
@@ -251,4 +324,23 @@ header nav ul li a:hover {
     form button {
         padding: 7px;
     }
+    .hero {
+        margin-top: 120px;
+    }
+    .hero .herotitle h1 {
+        font-size: 30px;
+    }
+    .hero .herotitle em {
+        font-size: 10px;
+    }
+    .hero .herotitle button {
+        padding: 7px;
+    }
 }
+
+
+
+
+
+
+
