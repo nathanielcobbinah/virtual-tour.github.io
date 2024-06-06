@@ -99,7 +99,7 @@ header .logo img {
 header nav {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    /* align-items: start; */
 }
 header nav ul {
     display: flex;
@@ -107,7 +107,7 @@ header nav ul {
     align-items: center;
     gap: 15px;
 }
-header nav span {
+#menu {
     background-color: blue;
     padding: 5px;
     border-radius: 5px;
@@ -203,18 +203,20 @@ header nav ul li a:hover {
     }
     header nav {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
-    header nav span {
+    #menu {
         display: block;
-        /* margin-right: 0; */
+        margin-right: 0;
+        /* display: absolute; */
+        right: 0;
+        top: 0;
     }
     header nav ul {
-        flex-direction: column;
-        margin-right: 0;
-        align-items: start;
-        z-index: 2;
-
+        flex-direction: column; 
+        margin-right: 0; 
+        align-items: start; 
+        display: none; 
     }
     header nav ul li {
         margin-bottom: 3px;

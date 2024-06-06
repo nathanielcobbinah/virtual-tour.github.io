@@ -22,7 +22,7 @@
                 <li><a href="#">Virtual home</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About</a></li>
-            </ul>
+            </ul>   
         </nav>
     </header>
 

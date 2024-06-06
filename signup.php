@@ -15,7 +15,7 @@
         <div class="forms">
             <form action="" method="post">
                 <div class="wrapper">
-                    <label for="name">Full Name:</label>
+                 <label for="name">Full Name:</label>
                     <input type="text" name="name" placeholder="Enter your name..." id="">
                 </div>
                 <div class="wrapper">
