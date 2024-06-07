@@ -71,19 +71,7 @@ $conn->close();
 </head>
 <body>
 
-<header>
-    <div class="logo">
-        <img src="virtual3.png" alt="">
-        VIRTUAL
-    </div>
-    <div class="username">
-        <?php 
-        if (isset($_SESSION['username'])) {
-            echo '<a href="profile.php">Welcome, ' . htmlspecialchars($_SESSION['username']) . '</a>';
-        }
-        ?>
-    </div>
-</header>
+<?php require 'header.php'; ?>
 
 <div class="profile">
     <h1>Edit Profile</h1>

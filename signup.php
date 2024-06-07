@@ -76,8 +76,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $stmt->bind_param("sssss", $name, $username, $email, $hashedPassword, $gender);
 
             if ($stmt->execute()) {
-                echo "User added successfully";
                 $name = $email = $username = $password = $confirmPassword  = $gender = "";
+                header("Location: index.php");
+                exit();
             } else {
                 echo "Error: " . $stmt->error;
             }
